@@ -1,0 +1,73 @@
+.navbar {
+  max-height: 115px;
+  height: 10vh;
+  background-color: var(--color4);
+  display: flex;
+  position: relative;
+}
+
+.navbar > div {
+  height: 100%;
+}
+
+.logo {
+  width: 15%;
+}
+
+.search-bar,
+.sections {
+  width: 42.5%;
+}
+
+/*
+  Barra de navegación
+*/
+.search-bar {
+  display: flex;
+  padding: 15px 5px;
+}
+
+.s-i {
+  outline: none;
+  width: 90%;
+  padding: 0px 10px;
+  border: none;
+  border-radius: 4px 0px 0px 4px;
+}
+
+.search-btn {
+  width: 10%;
+  background-color: #cecece;
+  border-radius: 0px 4px 4px 0px;
+  cursor: pointer;
+}
+
+/*
+  Secciones
+*/
+.sections {
+  padding: 0px 30px;
+  display: flex;
+}
+
+.sec {
+  width: calc(100% / 5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}
+
+.sec:hover {
+  border-bottom: 6px solid #a60d2e;
+}
+
+.sec:hover > .sec-name {
+  border-bottom-width: 0px;
+}
+
+.sec-name {
+  color: #fff;
+  font-weight: bold;
+  text-shadow: 3px 3px 3px #000000;
+}

@@ -1,0 +1,20 @@
+:root {
+  --color1: #e86e25;
+  --color2: #f25527;
+  --color3: #db3d2f;
+  --color4: #f22752;
+  --color5: #e825b0;
+}
+
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+a {
+  text-decoration: none;
+}
