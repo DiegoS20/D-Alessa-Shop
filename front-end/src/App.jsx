@@ -5,14 +5,16 @@ import Navbar from "./components/Navbar";
 import "./assets/css/main.css";
 
 function App() {
-  function handleSearch(query) {}
+  function handleSearch(query) {
+    alert(query);
+  }
 
   return (
     <Router>
-      <Navbar />
+      <Navbar onSearch={handleSearch} />
       <Switch>
         <Route exact path="/">
-          <Index onSearch={handleSearch} />
+          <Index />
         </Route>
       </Switch>
     </Router>
