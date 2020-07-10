@@ -1,8 +1,8 @@
 import React from "react";
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
-import Index from "./components/Index";
-import Navbar from "./components/Navbar";
-import "./assets/css/main.css";
+import Index from "./components/Index/Index";
+import Navbar from "./components/Navbar/Navbar";
+import "./main.css";
 
 function App() {
   function handleSearch(query) {

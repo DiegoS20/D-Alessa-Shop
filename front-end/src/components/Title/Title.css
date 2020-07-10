@@ -1,0 +1,24 @@
+.title {
+  display: flex;
+  justify-content: space-evenly;
+  margin-bottom: 25px;
+}
+
+.t-de {
+  display: flex;
+  align-items: center;
+  padding: 0px 15px;
+  width: 100%;
+}
+
+.t-de-c {
+  height: 5px;
+  background-color: #000;
+  width: 100%;
+}
+
+.title .txt {
+  white-space: nowrap;
+  font-size: 2em;
+  font-weight: bold;
+}
