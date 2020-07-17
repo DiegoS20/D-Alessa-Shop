@@ -5,13 +5,13 @@ function Navbar(props) {
   const [searchVal, setSearchVal] = useState("");
 
   function handleSearchBtnClick() {
-    if (searchVal) {
+    if (searchVal.trim()) {
       props.onSearch(searchVal);
     }
   }
 
   function handleEnterPressed(e) {
-    if (e.key.toLowerCase() === "enter" && searchVal) {
+    if (e.key.toLowerCase() === "enter" && searchVal.trim()) {
       props.onSearch(searchVal);
     }
   }

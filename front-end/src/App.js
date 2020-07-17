@@ -2,7 +2,7 @@ import React from "react";
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 import Index from "./components/Index/Index";
 import Navbar from "./components/Navbar/Navbar";
-import "./main.css";
+import "./App.css";
 
 function App() {
   function handleSearch(query) {
@@ -13,9 +13,7 @@ function App() {
     <Router>
       <Navbar onSearch={handleSearch} />
       <Switch>
-        <Route exact path="/">
-          <Index />
-        </Route>
+        <Route exact path="/" component={Index} />
       </Switch>
     </Router>
   );

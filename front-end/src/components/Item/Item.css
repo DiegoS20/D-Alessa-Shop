@@ -1,0 +1,64 @@
+.item {
+  width: calc(100% / 5);
+  max-width: 500px;
+  border-radius: 10px;
+  overflow: hidden;
+  background-color: #fff;
+  cursor: pointer;
+
+  -webkit-transition: all 0.3s ease;
+  -moz-transition: all 0.3s ease;
+  -ms-transition: all 0.3s ease;
+  -o-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+}
+
+.item:hover {
+  -webkit-box-shadow: 5px 5px 15px 0 #000000;
+  box-shadow: 5px 5px 15px 0 #000000;
+}
+
+.item-info {
+  display: flex;
+  flex-direction: column;
+  padding: 10px;
+}
+
+.item-info > div {
+  margin-bottom: 5px;
+}
+
+.item-info .description {
+  font-size: 13px;
+  color: gray;
+}
+
+.item-info .price {
+  font-weight: bold;
+  font-size: 20px;
+}
+
+.item-info .price .prev-price {
+  display: flex;
+  align-items: center;
+}
+
+.item-info .price .prev-price .amount {
+  font-size: 13px;
+  font-weight: normal;
+  text-decoration: line-through;
+  color: gray;
+  margin-right: 5px;
+}
+
+.item-info .price .prev-price .offer-p {
+  font-size: 13px;
+  color: #ff0000;
+  background-color: rgba(243, 41, 41, 0.5);
+}
+
+.item-info .last-info {
+  display: flex;
+  justify-content: space-between;
+  font-size: 14px;
+}
