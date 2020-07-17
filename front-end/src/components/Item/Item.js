@@ -50,8 +50,8 @@ Item.propTypes = {
     sold: PropTypes.number,
     shipping: PropTypes.number,
     score: PropTypes.number,
-    onClick: PropTypes.func,
   }),
+  onClick: PropTypes.func,
 };
 
 export default Item;
