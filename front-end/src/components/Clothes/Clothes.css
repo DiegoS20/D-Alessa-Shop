@@ -1,0 +1,9 @@
+.items-group {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 25px;
+}
+
+.items-group.not-completed {
+  justify-content: space-evenly;
+}
