@@ -1,6 +1,6 @@
 .head {
   background-color: #000;
-  height: 55vh;
+  height: 90vh;
   color: white;
   font-weight: bold;
   display: flex;
@@ -12,21 +12,4 @@
   width: 85%;
   margin: auto;
   padding: 40px 0px;
-}
-
-.category-wrapper {
-  display: flex;
-  justify-content: space-between;
-}
-
-.category-wrapper > div {
-  width: calc(50% - 5px);
-}
-
-.children {
-  margin-bottom: 5px;
-}
-
-.cat {
-  cursor: pointer;
 }
