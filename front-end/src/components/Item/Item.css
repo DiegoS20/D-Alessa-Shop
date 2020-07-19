@@ -1,5 +1,5 @@
 .item {
-  width: calc(100% / 5);
+  width: calc(100% / 4.5);
   max-width: 500px;
   border-radius: 10px;
   overflow: hidden;
