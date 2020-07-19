@@ -1,12 +1,11 @@
 import React from "react";
 import PropTypes from "prop-types";
-import Item from "../Item/Item";
 
-import "./Clothes.css";
+import "./Showcase.css";
 
 const ITEMS_PER_ROW = 4;
 
-function Clothes(props) {
+function Showcase(props) {
   let groups = [];
   const itemsCopy = props.items.slice();
   const groupsNumber = Math.ceil(itemsCopy.length / ITEMS_PER_ROW);
@@ -16,8 +15,10 @@ function Clothes(props) {
     /* Calculating how many turns the loop that stores the current elements group has to do based on remaining items  */
     const gOICycles =
       itemsCopy.length < ITEMS_PER_ROW ? itemsCopy.length : ITEMS_PER_ROW;
-    for (let j = 0; j < gOICycles; j++)
-      itemsGroup.push(<Item info={itemsCopy.shift()} key={j} />); // Per each cycle, remove an item.
+    for (let j = 0; j < gOICycles; j++) {
+      const Product = props.product;
+      itemsGroup.push(<Product info={itemsCopy.shift()} key={j} />); // Per each cycle, remove an item.
+    }
     let groupClassName = "items-group";
     if (itemsGroup.length < ITEMS_PER_ROW) groupClassName += " not-completed";
     groups.push(
@@ -27,11 +28,18 @@ function Clothes(props) {
     );
   }
 
-  return <div className="clothes">{groups}</div>;
+  return (
+    <div className="showcase">
+      {props.title !== undefined && <div className="title">{props.title}</div>}
+      {groups}
+    </div>
+  );
 }
 
-Clothes.propTypes = {
+Showcase.propTypes = {
   items: PropTypes.array.isRequired,
+  product: PropTypes.elementType.isRequired,
+  title: PropTypes.string,
 };
 
-export default Clothes;
+export default Showcase;

@@ -26,3 +26,14 @@ a {
 img {
   width: 100%;
 }
+
+/* Fuentes */
+@font-face {
+  font-family: Roboto;
+  src: url(./assets/fonts/Roboto-Regular.ttf);
+}
+
+@font-face {
+  font-family: Roboto-thin;
+  src: url(./assets/fonts/Roboto-Thin.ttf);
+}

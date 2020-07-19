@@ -1,0 +1,36 @@
+.category {
+  width: calc(100% / 5);
+  background-color: #fff;
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.category * {
+  font-family: Roboto;
+}
+
+.category .cat-img {
+  cursor: pointer;
+}
+
+.category .cat-info {
+  padding: 10px;
+}
+
+.cat-info .cat-name,
+.cat-info .cat-desc {
+  text-align: center;
+  color: gray;
+}
+
+.cat-info .cat-name {
+  font-size: 1.5rem;
+  cursor: pointer;
+}
+.cat-info .cat-name:hover {
+  text-decoration: underline;
+}
+
+.cat-info .cat-desc {
+  font-size: 0.9rem;
+}
