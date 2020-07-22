@@ -1,0 +1,34 @@
+img {
+  width: 100%;
+}
+
+footer * {
+  font-family: Roboto, Arial, Helvetica, sans-serif;
+}
+
+footer {
+  width: 100%;
+  height: 25vh;
+  background-color: #000;
+  color: #fff;
+  padding: 20px 7.5vw 0px 7.5vw;
+  display: flex;
+}
+
+footer > div {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.links {
+  display: flex;
+  justify-content: space-around;
+  width: 50%;
+  margin-top: 15px;
+}
+
+.links .network {
+  width: 50px;
+}
